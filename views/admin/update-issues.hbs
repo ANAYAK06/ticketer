@@ -1,0 +1,47 @@
+<section>
+  <div class="container">
+	  
+    <table class="table" id="table_id">
+		<thead style="position: sticky;top: 0" class="thead-dark">
+			<tr>
+				<th class="header" scope="col">Issue No</th>
+				<th class="header" scope="col"> Date</th>
+				<th class="header" scope="col">Module</th>
+				<th class="header" scope="col">Issue Name</th>
+        <th class="header" scope="col">Issue Description</th>
+        <th class="header" scope="col">Issue Assigned to</th>
+        <th class="header" scope="col">Status</th>
+        <th class="header" scope="col">Update</th>
+			</tr>
+		</thead>
+		{{#each issues}}
+		<tbody>
+			<tr>
+				<td>{{this.issueNo}}</td>
+				<td>{{this.date}}</td>
+				<td>{{this.module}}</td>
+				<td>{{this.issueName}}</td>
+        <td>{{this.issueDescription}}</td>
+        <td>Online</td>
+        <td> <select name="status" id="" class="form-control">
+          <option value="NEW">New</option>
+          <option value="NEW">Assigned</option>
+          <option value="NEW">Hold</option>
+          <option value="NEW">Completed</option>
+        </select></td>
+        <td><button class="btn btn-primary">Update</button></td>
+			</tr>
+		
+		</tbody>
+		{{/each}}
+	</table>
+	
+</div>
+
+</section>
+
+<script>
+$( function () {
+    $('#table_id').DataTable();
+} );
+</script>

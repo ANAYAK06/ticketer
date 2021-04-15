@@ -1,0 +1,43 @@
+
+#userLogin{
+  float: left;
+  width: 290px;
+  padding: 20px;
+  border: 2px solid red;
+  border-radius: 5px;
+  
+  
+}
+ 
+
+#adminLogin{
+  float: left;
+ width: 290px;
+  padding: 20px;
+  border: 2px solid red;
+  border-radius: 5px;
+  margin-left: 20px;
+  
+}
+.logpage{
+  margin: auto;
+  text-align: center;
+  margin-top: 65px;
+  border: 2px solid grey;
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 10px 2px #888888;
+  background-color:rgb(233, 224, 224);
+
+  
+
+}
+#issueh3{
+  text-align: center;
+  margin-top: 50px
+  
+  ;
+}
+#table_id{
+margin-top: 50px;
+}

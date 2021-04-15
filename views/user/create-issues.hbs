@@ -1,0 +1,24 @@
+<section>
+    <div class="container col-md-6 ">
+        <form  action="/create-issue" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="">Module</label>
+                <select class="form-control" name="module" id=""> 
+                     <option value="">---Select one---</option>
+                    <option value="accounts"   >Accounts</option>
+                    <option value="store">Store</option>
+                    <option value="hr">HR</option>
+
+                </select>
+                <label for="date">Date</label>
+                <input type="date" name="date" class="form-control">
+                <label for="name" >Issue Name</label>
+                <input type="text" name="issuename" class="form-control">
+                <label for="description">Issue Description</label>
+                <textarea name="description" id="" cols="30" rows="10" class="form-control"></textarea>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+
+            </div>
+        </form>
+    </div>
+</section>
